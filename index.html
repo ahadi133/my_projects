@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collection of analytics dashboards, spreadsheet models, and decision analysis projects by Ahadi Nur.">
+  <meta name="theme-color" content="#101a1d">
+  <title>Projects | Ahadi Nur</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101a1d;--panel:#172528;--line:#304245;--text:#f2f5ec;--muted:#b0c1bd;--accent:#c5f36b;--blue:#8bd8d2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 84% 0%,#243b39 0,transparent 38rem),var(--bg);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.top{padding:26px 0;border-bottom:1px solid #ffffff18}.top a{color:var(--accent);text-decoration:none;font-weight:700;letter-spacing:.02em}
+    header{padding:78px 0 48px}.eyebrow,.tag{color:var(--accent);font-size:.76rem;font-weight:750;letter-spacing:.13em;text-transform:uppercase}h1{max-width:800px;margin:.45rem 0 1rem;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.99;letter-spacing:-.055em}header p{max-width:660px;color:var(--muted);font-size:1.1rem}.rule{height:1px;background:linear-gradient(90deg,var(--accent),transparent);margin:34px 0 0;max-width:180px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin:22px 0}.section-head h2{font-size:1.8rem;letter-spacing:-.03em;margin:0}.section-head p{margin:0;color:var(--muted);font-size:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding-bottom:64px}.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#1a2a2c,#142023);padding:24px;display:flex;flex-direction:column;min-height:245px}.card:before{content:"";position:absolute;right:-64px;top:-70px;width:180px;height:180px;border:1px solid #c5f36b26;border-radius:50%;box-shadow:0 0 0 22px #c5f36b09,0 0 0 44px #c5f36b06;pointer-events:none}.card h3{position:relative;font-size:1.28rem;line-height:1.25;margin:.65rem 0}.card p{position:relative;color:var(--muted);margin:.2rem 0 1.4rem;max-width:56ch}.tools{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.tool{padding:4px 9px;border:1px solid #526766;border-radius:99px;color:#d7e7df;font-size:.76rem}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.button{display:inline-flex;align-items:center;min-height:40px;padding:8px 13px;border:1px solid #759083;border-radius:9px;text-decoration:none;font-size:.85rem;font-weight:700}.button:hover,.button:focus-visible{border-color:var(--accent);color:var(--accent)}.button.primary{background:var(--accent);border-color:var(--accent);color:#14201a}.button.primary:hover,.button.primary:focus-visible{background:#d8ff8b}
+    .preview{margin:0 0 28px;border:1px solid var(--line);border-radius:18px;background:#172528;overflow:hidden}.preview figcaption{padding:14px 18px;color:var(--muted);font-size:.88rem}.preview iframe{display:block;width:100%;height:min(74vw,650px);border:0;background:#172528}.note{border-left:3px solid var(--blue);padding:10px 14px;margin-top:16px;background:#8bd8d20b;color:#c9d8d4;font-size:.84rem;border-radius:0 9px 9px 0}.foot{border-top:1px solid #ffffff18;padding:24px 0 42px;color:var(--muted);font-size:.85rem}.foot a{color:var(--accent)}
+    @media(max-width:700px){.wrap{width:min(100% - 28px,560px)}header{padding:58px 0 34px}.grid{grid-template-columns:1fr;gap:12px}.card{padding:20px}.section-head{display:block}.section-head p{margin-top:5px}.preview iframe{height:75vh}}
+  </style>
+</head>
+<body>
+  <div class="top"><div class="wrap"><a href="https://ahadinur.vercel.app/">AHADI NUR <span aria-hidden="true">↗</span></a></div></div>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">Selected work · Analytics &amp; decision support</div>
+      <h1>Projects built to make the numbers useful.</h1>
+      <p>Dashboards, spreadsheet models, and decision analysis. Browse the previews and download the native project files to explore each piece.</p>
+      <div class="rule"></div>
+    </header>
+
+    <section aria-labelledby="preview-title">
+      <div class="section-head"><h2 id="preview-title">Dashboard preview</h2><p>World GDP · static PDF export</p></div>
+      <figure class="preview">
+        <iframe src="01-world-gdp-dashboard/World_GDP_Dashboard.pdf" title="World GDP dashboard PDF preview" loading="lazy"></iframe>
+        <figcaption>If the preview does not load, <a href="01-world-gdp-dashboard/World_GDP_Dashboard.pdf">open the dashboard PDF</a>.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="projects-title">
+      <div class="section-head"><h2 id="projects-title">Project files</h2><p>Open a project note or download its source file.</p></div>
+      <div class="grid">
+        <article class="card"><div class="tag">Global indicators</div><h3>World GDP Dashboard</h3><p>Explore GDP, population, trade, land, and development indicators across countries and years.</p><div class="tools"><span class="tool">Looker Studio</span><span class="tool">Dashboard</span><span class="tool">Economic data</span></div><div class="actions"><a class="button primary" href="01-world-gdp-dashboard/World_GDP_Dashboard.pdf">Open PDF preview</a><a class="button" href="01-world-gdp-dashboard/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Financial analytics</div><h3>Financial Market Performance</h3><p>Review profitability, liquidity, cash flow, and market value across companies and years.</p><div class="tools"><span class="tool">Power BI</span><span class="tool">KPI design</span><span class="tool">Financial analysis</span></div><div class="actions"><a class="button primary" href="02-financial-market-powerbi/Financial_Market_Performance.pbix" download>Download PBIX</a><a class="button" href="02-financial-market-powerbi/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Sales &amp; cost analysis</div><h3>Cost Benefit Analysis</h3><p>Tableau workbook for product and state performance, costs, margins, and profit.</p><div class="tools"><span class="tool">Tableau</span><span class="tool">Profitability</span><span class="tool">Geographic analysis</span></div><div class="note">The workbook expects a separate source spreadsheet that is not included. See the project notes before opening.</div><div class="actions"><a class="button primary" href="03-cost-benefit-tableau/Cost_Benefit_Analysis.twb" download>Download TWB</a><a class="button" href="03-cost-benefit-tableau/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Sales reporting</div><h3>Excel Sales Dashboard</h3><p>Monthly, market, and product summaries for units sold, revenue, costs, and profit.</p><div class="tools"><span class="tool">Excel</span><span class="tool">Sales analysis</span><span class="tool">Dashboard</span></div><div class="actions"><a class="button primary" href="04-excel-sales-dashboard/Excel_Sales_Dashboard.xlsx" download>Download workbook</a><a class="button" href="04-excel-sales-dashboard/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Planning models</div><h3>Excel Business Decision Models</h3><p>Break-even analysis, product-mix optimization, and what-if scenarios in a set of spreadsheet exercises.</p><div class="tools"><span class="tool">Excel</span><span class="tool">Goal Seek</span><span class="tool">Optimization</span></div><div class="actions"><a class="button primary" href="05-excel-business-modeling/README.md">View project files</a><a class="button" href="05-excel-business-modeling/Goal_Seek_Analysis.xlsx" download>Goal Seek</a><a class="button" href="05-excel-business-modeling/Product_Mix_Optimization.xlsx" download>Product mix</a><a class="button" href="05-excel-business-modeling/Scenario_and_Sensitivity_Analysis.xlsx" download>Scenarios</a></div></article>
+        <article class="card"><div class="tag">Exploratory analysis</div><h3>Housing &amp; SAT Data Analysis</h3><p>Excel exercises using descriptive statistics, correlation, regression, and result interpretation.</p><div class="tools"><span class="tool">Excel</span><span class="tool">Regression</span><span class="tool">Exploratory analysis</span></div><div class="actions"><a class="button primary" href="06-data-analysis-exercises/Data_Analysis_Exercises.xlsx" download>Download workbook</a><a class="button" href="06-data-analysis-exercises/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Decision modeling</div><h3>Party Problem</h3><p>Compare location choices under uncertain weather using probability-based modeling.</p><div class="tools"><span class="tool">Analytica</span><span class="tool">Expected value</span><span class="tool">Sensitivity analysis</span></div><div class="actions"><a class="button primary" href="07-party-problem-analytica/Party_Problem.ana" download>Download model</a><a class="button" href="07-party-problem-analytica/README.md">Project notes</a></div></article>
+        <article class="card"><div class="tag">Decision support</div><h3>Choosing a Bank Internship</h3><p>Compare bank internship alternatives across learning, work environment, growth, location, and stipend.</p><div class="tools"><span class="tool">Decision Oven</span><span class="tool">Multi-criteria analysis</span></div><div class="actions"><a class="button primary" href="08-bank-internship-decision-model/Bank_Internship_Choice.dof" download>Download model</a><a class="button" href="08-bank-internship-decision-model/README.md">Project notes</a></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="foot"><div class="wrap">Project files are shared for portfolio review. See each project note for software and data requirements. <a href="README.md">Repository overview</a> · <a href="https://github.com/ahadi133/my_projects">GitHub repository</a></div></footer>
+</body>
+</html>
