@@ -6,14 +6,12 @@ Organized source files and notes for analytics, dashboard, spreadsheet modeling,
 
 | Project | Focus |
 | --- | --- |
-| [World GDP Dashboard](01-world-gdp-dashboard/README.md) | Country-level economic indicators and development trends |
-| [Financial Market Performance](02-financial-market-powerbi/README.md) | Financial KPIs and company comparisons in Power BI |
-| [Cost Benefit Analysis](03-cost-benefit-tableau/README.md) | Sales, costs, margins, and geographic profit in Tableau |
-| [Excel Sales Dashboard](04-excel-sales-dashboard/README.md) | Product, market, and monthly sales performance |
-| [Excel Business Models](05-excel-business-modeling/README.md) | Break-even, product-mix optimization, and scenarios |
-| [Data Analysis Exercises](06-data-analysis-exercises/README.md) | Housing and SAT data analysis in Excel |
-| [Party Problem Model](07-party-problem-analytica/README.md) | Probability-based decision modeling in Analytica |
-| [Bank Internship Choice](08-bank-internship-decision-model/README.md) | Multi-criteria decision analysis in Decision Oven |
+| [Financial Market Performance](financial-market-powerbi/README.md) | Financial KPIs and company comparisons in Power BI |
+| [Cost Benefit Analysis](cost-benefit-tableau/README.md) | Sales, costs, margins, and geographic profit in Tableau |
+| [Excel Sales Dashboard](excel-sales-dashboard/README.md) | Product, market, and monthly sales performance |
+| [Excel Business Models](excel-business-modeling/README.md) | Break-even, product-mix optimization, and scenarios |
+| [Data Analysis Exercises](data-analysis-exercises/README.md) | Housing and SAT data analysis in Excel |
+| [Party Problem Model](party-problem-analytica/README.md) | Probability-based decision modeling in Analytica |
 
 ## Before sharing
 
