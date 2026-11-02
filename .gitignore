@@ -1,0 +1,32 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Office temporary and lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# Tableau generated files
+*.hyper
+*.tde
+*.twb~
+*.tfl
+*.tflx
+
+# Power BI local cache and backup files
+*.pbix.autosave
+*.pbit.autosave
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Common build output
+build/
+dist/

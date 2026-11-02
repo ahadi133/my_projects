@@ -1,0 +1,90 @@
+{ Analytica Model Party_Problem, encoding="UTF-8" }
+SoftwareVersion 6.3.6
+
+
+{ System Variables with non-default values: }
+SampleSize := 1000
+TypeChecking := 1
+Checking := 1
+SaveOptions := 2
+SaveValues := 0
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+NodeInfo FormNode: 1,0,0,,0,0,,,,0,,,0
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+{!-60000|Attribute AcpStyles}
+
+
+Model Party_Problem
+Title: Party Problem
+Description: The Party Problem evaluates alternative party locations and their relative value to me
+Author: Ahadi Eobin
+Date: Sun, May 24, 2026 2:14 PM
+DiagState: 2,0,0,544,356,17,10
+WindState: 2,98,82,720,350
+FontStyle: Arial,15
+FileInfo: 0,Model Party_Problem,2,2,0,0,F:\Portfolio\Party_Problem.ana
+
+Decision Party_Location
+Att_PrevIndexValue: ['Outdoors','Porch','Indoors']
+Title: Party Location
+Description: The party locations under consideration
+Definition: ['Outdoors','Porch','Indoors']
+NodeLocation: 104,72,1
+NodeSize: 64,24
+WindState: 2,98,82,720,350
+ValueState: 2,767,31,416,303,1,MIDM
+ReformVal: [Self,Undefined]
+Att_ColorRole: Self
+Att_OriginRole: Null
+{!40600|Att_ClusterIndex: Null}
+
+Chance Weather
+Title: Weather
+Description: Weather outcomes and probabilities
+Definition: ProbTable(Self)(Sunshine,1-Sunshine)
+NodeLocation: 80,168,1
+NodeSize: 64,24
+WindState: 2,98,82,720,350
+DefnState: 2,405,92,316,136,0,DFNM
+ValueState: 2,105,301,876,170,,STAT
+ReformDef: [Null,Sys_LocalIndex('DomainIndex')]
+ReformVal: [Null,Sunshine,Undefined,2]
+{!40300|DomainExpr: Discrete('Sunny','Rainy',type:'text')}
+Att__TotalsIndex: [Sunshine]
+{!40700|Att_CellFormat: CellSpan((Self.DomainIndex),CellEntry(1,0,0,0,0),1)}
+{!50000|Att_RowHeights: [,Sys_LocalIndex('DomainIndex'),\([15,16])]}
+
+Objective Utility
+Title: Utility(value to me)
+Description: The utility, or value to me, given a party location and weather outcome, assigned in dollars
+Definition: DetermTable(Party_Location,Weather)(~
+100,-20,~
+90,50,~
+40,40)
+NodeLocation: 296,112,1
+NodeSize: 64,24
+WindState: 2,98,82,720,350
+DefnState: 2,839,388,332,140,0,DFNM
+ValueState: 2,387,200,351,344,1,MEAN
+GraphSetup: Att_GraphIndexRange Party_Location:1,,1,,,,,3,3,1
+ReformVal: [Party_Location,Sunshine]
+Att_ResultSliceState: [Sunshine,1,Party_Location,1]
+Att_ColorRole: Self
+{!40600|Att_ClusterIndex: Null}
+
+Chance Sunshine
+Title: Sunshine
+Definition: Sequence( 0,1,0.1)
+NodeLocation: 72,264,1
+NodeSize: 64,24
+WindState: 2,98,82,720,350
+
+Close Party_Problem
+
